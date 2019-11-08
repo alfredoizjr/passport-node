@@ -1,0 +1,44 @@
+<%- layout('layout/main.ejs') %>
+<section class="row">
+    <div class="col-md-5 offset-4">
+  
+          <!-- Default form login -->
+          <form
+            class="text-center border border-light p-5"
+            action="/singup"
+            method="POST"
+          >
+            <p class="h4 mb-4">Register</p>
+  
+            <!-- Email -->
+            <input
+              id="defaultLoginFormEmail"
+              class="form-control mb-4"
+              type="email"
+              name="email"
+              placeholder="enter your email"
+            />
+  
+            <!-- Password -->
+            <input
+              type="password"
+              name="password"
+              id="defaultLoginFormPassword"
+              class="form-control mb-4"
+              placeholder="enter your password"
+            />
+  
+            <!-- Sign in button -->
+            <button class="btn btn-info btn-block my-4" type="submit">
+              Sign in
+            </button>
+  
+            <!-- Register -->
+            <p>
+              A member alredy
+              <a href="/singin">Sing in</a>
+            </p>
+          </form>
+          <!-- Default form login -->
+    </div>
+  </section>
